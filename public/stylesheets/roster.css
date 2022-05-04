@@ -1,0 +1,12 @@
+.roster p{
+    font-size: 17px;
+    font-weight: bold;
+}
+.roster h2{
+    font-size: 28px;
+    font-weight: bolder;
+}
+.roster{
+    position: absolute;
+    left: 20px
+}

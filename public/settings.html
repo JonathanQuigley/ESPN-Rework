@@ -1,0 +1,74 @@
+<html>
+<head>
+  <title>Settings</title>
+  <link rel="stylesheet" href="/stylesheets/topBar.css"> 
+  <link rel='stylesheet' href='/stylesheets/loginsignup.css'/>
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body style="background-color: #f5f5f5;">
+  <div class="imageContainer">
+      <header>
+          <img src="/ESPN-TopBar.PNG" width="auto" height="auto">
+          <div style="top: 70%; left: 50%; transform: translate(-50%, -50%); position: absolute;"> 
+             <p style="font-size: 18px;">ESPN SETTINGS PAGE</p>
+          </div>
+          <!-- To make life easier there will be no actual default page setting, more news will link to ESPNs original page -->
+          <!-- This will be a button that links to an accounts settings page -->
+      </header>
+  </div>
+ 
+  <h2>Settings Menu</h2>
+  
+  <form method="post" action="/login/settings">
+  <p>Please fillout everything!</p>
+  <div style="font-weight: bolder;" id= "message"></div>
+  <br><div style = "float:left; width: 200px;">Fan Level </div>
+    <input type="radio" name="level" value="rookie">Rookie
+    <input type="radio" name="level" value="casual">Casual
+    <input type="radio" name="level" value="pro">Pro<br>
+  <div style = "float:left; width: 200px;">&nbsp;</div><br>
+  <div style = "float:left; width: 200px;">Location </div>
+  <div class = "dropdown1">
+    <select class ="dropbtn1" name = "location">
+    <div class ="dropdown-content1">
+      <option>Choose  </option>
+      <option value ="MA">MA</option>
+      <option value ="NY">NY</option>
+      <option value ="PA">PA</option>
+      <option value ="NH">NH</option>
+      <option value ="ME">ME</option>
+    </div>
+    </select>
+  </div><br>
+    <br><div style = "float:left; width: 200px;">Favorite Sport </div>
+    <div class = "dropdown1">
+      <select class ="dropbtn1" name ="sportpreference">
+      <div class ="dropdown-content1">
+        <option>Choose  </option>
+        <option value ="Soccer">Soccer</option>
+        <option value ="Golf">Golf</option>
+        <option value ="NFL">NFL</option>
+        <option value ="MLB">MLB</option>
+        <option value ="NHL">NHL</option>
+        <option value ="NBA">NBA</option>
+      </div>
+      </select>
+  </div><br>
+  <br>
+    <div style = "float:left; width: 200px;"> Current Password </div>
+    <input type="password" name="curpassword" ><br>
+    <br>
+    <div style = "float:left; width: 200px;"> Password </div>
+    <input type="password" name="password1"><br>
+    <br>
+    <div style = "float:left; width: 200px;"> Confirm password </div>
+    <input type="password" name ="password2"><br>
+    <br><input type="submit" value="Submit the user information">
+  </form>
+
+  <br> <a style="color: blue;" href="/login">Back to Login Page</a><br>
+  <script src="/javascripts/message.js" type="text/babel"></script>
+</body>
+</html>
