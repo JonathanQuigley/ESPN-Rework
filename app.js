@@ -6,7 +6,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');   // users.js
 // new line for the exam
-var examRouter = require('./routes/login');  // exam.js
+var loginRouter = require('./routes/login');  // exam.js
 
 var app = express();
 
@@ -109,6 +109,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/login', examRouter); // new for the exam
+app.use('/login', loginRouter); // new for the exam
 
 module.exports = app;
